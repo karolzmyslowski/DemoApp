@@ -1,0 +1,13 @@
+//
+//  Production.xcconfig
+//  DemoAppL
+//
+//  Created by Karol Zmysłowski on 29/05/2019.
+//  Copyright © 2019 Karol. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+server_host = jsonplaceholder.typicode.com
+server_scheme = http
