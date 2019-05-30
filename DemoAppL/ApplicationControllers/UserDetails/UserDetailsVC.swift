@@ -215,7 +215,6 @@ extension UserDetailsVC: UITableViewDataSource {
         activityCell.title = post.title
         activityCell.subTitle = post.body
         activityCell.cellImage = #imageLiteral(resourceName: "defaultImage")
-        activityCell.update()
         
         return activityCell
     }

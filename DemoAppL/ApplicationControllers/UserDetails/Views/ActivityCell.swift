@@ -11,9 +11,30 @@ import SnapKit
 
 final class ActivityCell: UITableViewCell, Identifiable {
     
-    var title: String?
-    var subTitle: String?
-    var cellImage: UIImage?
+    var title: String? {
+        get {
+            return titleLabel.text
+        }
+        set {
+            titleLabel.text = newValue
+        }
+    }
+    var subTitle: String?  {
+        get {
+            return subTitleLabel.text
+        }
+        set {
+            subTitleLabel.text = newValue
+        }
+    }
+    var cellImage: UIImage? {
+        get {
+            return cellImaveView.image
+        }
+        set {
+            cellImaveView.image = newValue
+        }
+    }
     
     private var titleLabel: UILabel!
     private var subTitleLabel: UILabel!
@@ -27,12 +48,6 @@ final class ActivityCell: UITableViewCell, Identifiable {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    func update() {
-        titleLabel.text = title
-        subTitleLabel.text = subTitle
-        cellImaveView.image = cellImage
     }
     
     private func buildUI() {

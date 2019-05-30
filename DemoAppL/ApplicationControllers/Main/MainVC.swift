@@ -91,7 +91,6 @@ extension MainVC: UITableViewDataSource {
         mainCell.firstSubTitle = user.email
         mainCell.secoundSubTitle = user.phone
         mainCell.cellImage = #imageLiteral(resourceName: "defaultImage")
-        mainCell.update()
         
         return mainCell
     }
